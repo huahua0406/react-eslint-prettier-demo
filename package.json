@@ -14,9 +14,7 @@
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "lint": "eslint --ext .tsx,.ts,.js,.jsx --fix ./src",
-        "fix": "prettier --write  ./src"
+        "eject": "react-scripts eject"
     },
     "husky": {
         "hooks": {
@@ -25,7 +23,7 @@
         }
     },
     "lint-staged": {
-        "src/*.{jsx,txs,ts,js,css,less}": [
+        "src/*.{jsx,txs,ts,js}": [
             "prettier --write",
             "eslint --fix"
         ]
